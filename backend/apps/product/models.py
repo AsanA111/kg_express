@@ -1,4 +1,5 @@
 from django.db import models
+from backend.apps.accounts.models import User
 
 class Category(models.Model):
     name = models.CharField("Название", max_length=50, unique=True)
